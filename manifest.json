@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Website Highlight Saver",
+    "description": "Keep record of your highlighted and saved texts.",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "fav.png"
+    }
+  }
